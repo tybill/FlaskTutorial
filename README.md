@@ -24,6 +24,15 @@ python server.py
 
 Default port is set to 8080.
 
+The server also supports connection to a mongo db instance. To start the server with
+connection to a particular db collection running on localhost, run
+```
+python server.py {port} {db_name} {collection_name}
+```
+port - The port your mongodb server is on (The default port for mongo is 27017)
+db_name - Name of your db instance
+collection_name - Name of the collection
+
 ### ngrok
 A great tool to expose your server running on localhost. To start, run
 ```
