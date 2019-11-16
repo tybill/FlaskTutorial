@@ -17,11 +17,7 @@ if len(sys.argv) > 1:
 # Hello World!
 @app.route("/hello", methods=['GET', 'POST'])
 def hello():
-    resp = MessagingResponse()
-
-    # Add a message
-    resp.message("Hello World!\n");
-    return str(resp)
+    return "Hello World!"
 
 # Basic Json example
 @app.route("/json", methods=['GET', 'POST'])

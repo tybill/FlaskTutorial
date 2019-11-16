@@ -33,6 +33,46 @@ port - The port your mongodb server is on (The default port for mongo is 27017)
 db_name - Name of your db instance
 collection_name - Name of the collection
 
+There are several APIs supported by the server
+
+##### /hello
+Sample request:
+```
+{url}/hello
+```
+
+##### /json
+Sample request:
+```
+{url}/json?firstname=Tommy&lastname=Trojan
+```
+
+Sample response:
+```
+{
+	"firstname": Tommy,
+	"lastname": Trojan
+}
+```
+
+##### /template
+Sample request:
+```
+{url}/json?name=Tommy
+```
+
+##### /add
+Sample request:
+```
+{url}/add?name=Tommy&email=ttrojan@usc.edu
+```
+
+##### /get
+Sample request:
+```
+{url}/get?name=Tommy
+```
+
 ### ngrok
 A great tool to expose your server running on localhost. To start, run
 ```
