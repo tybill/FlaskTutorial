@@ -9,13 +9,13 @@ https://dev.to/sahilrajput/install-flask-and-create-your-first-web-application-2
 ```
 
 ## About the tutorial
-
+```
 Flaskturotial
 	|--------------- server.py
 	|--------------- ngrok
 	|--------------- templates
 				|-------------------- index.html
-
+```
 ### server.py
 The server application written with flask. To start, run
 ```
